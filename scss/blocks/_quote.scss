@@ -1,0 +1,51 @@
+.quote {
+	padding: 80px 655px;
+	background-color: $gallery;
+
+	@include mediaLaptop {
+		padding: 0 345px;
+	}
+
+	@include mediaLaptopmini {
+		padding: 0 140px;
+	}
+
+	@include mediaTable {
+		padding: 20px 0;
+	}
+
+	@include mediaTablemini {
+		padding: 20px 140px;
+	}
+
+	@include mediamobile {
+		padding: 20px 50px;
+	}
+}
+
+.quote__blockquote {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.6px;
+	color: $caparol;
+
+	@include mediaTable {
+		font-size: 16px;
+	}
+}
+
+.quote__figcaption {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.29;
+	letter-spacing: 0.6px;
+	text-align: end;
+	color: $caparol;
+
+	@include mediaTable {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,59 @@
+.conquer {
+  position: relative;
+  overflow: hidden;
+  padding: 195px 0 120px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 960px;
+    height: 850px;
+    top: 0;
+    left: calc(50% + 615px);
+    transform: translate(-64%, 0);
+    background-image: url(./../image/conquer/conquer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include mediaTable {
+    padding: 40px 0;
+
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+.conquer__heading {
+  margin-bottom: 100px;
+  text-align: start;
+
+  @include mediaLaptopmini {
+    font-size: 36px;
+  }
+
+  @include mediaTable {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  @include mediaTablemini {
+    text-align: center;
+  }
+}
+
+.conquer__text {
+  margin-bottom: 30px;
+  max-width: 510px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.6px;
+  color: $caparol;
+
+  @include mediaTablemini {
+    max-width: 750px;
+  }
+}

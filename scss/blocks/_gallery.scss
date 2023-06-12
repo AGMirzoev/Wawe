@@ -1,0 +1,217 @@
+.gallery {
+	padding: 115px 0 195px;
+	overflow: hidden;
+
+	@include mediaTable {
+		padding-top: 0;
+		padding-bottom: 40px;
+	}
+}
+.gallery__heading {
+	margin-bottom: 215px;
+
+	@include mediaLaptopmini {
+		font-size: 36px;
+	}
+
+	@include mediaTable {
+		font-size: 22px;
+		margin-bottom: 40px;
+	}
+}
+.gallery__list {
+	margin-bottom: 50px;
+	display: flex;
+	column-gap: 20px;
+}
+.galerry__item {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 0.75;
+	letter-spacing: 0.6px;
+	color: $caparol;
+	cursor: pointer;
+
+	&:hover {
+		color: $pantone;
+	}
+
+	@include mediaTable {
+		font-size: 18px;
+	}
+}
+.gallery__blocks {
+	margin-bottom: 50px;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+
+	@include mediaTable {
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+	}
+}
+
+.gallery__block:nth-child(6n + 1) {
+	grid-column: 1/3;
+
+	@include mediaTable {
+		grid-column: 1/2;
+	}
+}
+.gallery__block:nth-child(6n) {
+	grid-column: 3/5;
+
+	@include mediaTable {
+		grid-column: 1/2;
+	}
+}
+
+.gallery__block {
+	height: 280px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.gallery__block:nth-child(n + 7) {
+	display: none;
+}
+.gallery__block.none {
+	display: none;
+}
+
+.tourists__img-1 {
+	background-image: url(./../image/gallery/tourists/1.jpg);
+}
+.tourists__img-2 {
+	background-image: url(./../image/gallery/tourists/2.jpg);
+}
+.tourists__img-3 {
+	background-image: url(./../image/gallery/tourists/3.jpg);
+}
+.tourists__img-4 {
+	background-image: url(./../image/gallery/tourists/4.jpg);
+}
+.tourists__img-5 {
+	background-image: url(./../image/gallery/tourists/5.jpg);
+}
+.tourists__img-6 {
+	background-image: url(./../image/gallery/tourists/6.jpg);
+}
+.tourists__img-7 {
+	background-image: url(./../image/gallery/tourists/7.jpg);
+}
+.tourists__img-8 {
+	background-image: url(./../image/gallery/tourists/8.jpg);
+}
+.tourists__img-9 {
+	background-image: url(./../image/gallery/tourists/9.jpg);
+}
+.tourists__img-10 {
+	background-image: url(./../image/gallery/tourists/10.jpg);
+}
+.tourists__img-11 {
+	background-image: url(./../image/gallery/tourists/11.jpg);
+}
+.tourists__img-12 {
+	background-image: url(./../image/gallery/tourists/12.jpg);
+}
+
+.nature__img-1 {
+	background-image: url(./../image/gallery/nature/1.jpg);
+}
+.nature__img-2 {
+	background-image: url(./../image/gallery/nature/2.jpg);
+}
+.nature__img-3 {
+	background-image: url(./../image/gallery/nature/3.jpg);
+}
+.nature__img-4 {
+	background-image: url(./../image/gallery/nature/4.jpg);
+}
+.nature__img-5 {
+	background-image: url(./../image/gallery/nature/5.jpg);
+}
+.nature__img-6 {
+	background-image: url(./../image/gallery/nature/6.jpg);
+}
+.nature__img-7 {
+	background-image: url(./../image/gallery/nature/7.jpg);
+}
+.nature__img-8 {
+	background-image: url(./../image/gallery/nature/8.jpg);
+}
+.nature__img-9 {
+	background-image: url(./../image/gallery/nature/9.jpg);
+}
+.nature__img-10 {
+	background-image: url(./../image/gallery/nature/10.jpg);
+}
+.nature__img-11 {
+	background-image: url(./../image/gallery/nature/11.jpg);
+}
+.nature__img-12 {
+	background-image: url(./../image/gallery/nature/12.jpg);
+}
+
+.prof__img-1 {
+	background-image: url(./../image/gallery/prof/1.jpg);
+}
+.prof__img-2 {
+	background-image: url(./../image/gallery/prof/2.jpg);
+}
+.prof__img-3 {
+	background-image: url(./../image/gallery/prof/3.jpg);
+}
+.prof__img-4 {
+	background-image: url(./../image/gallery/prof/4.jpg);
+}
+.prof__img-5 {
+	background-image: url(./../image/gallery/prof/5.jpg);
+}
+.prof__img-6 {
+	background-image: url(./../image/gallery/prof/6.jpg);
+}
+.prof__img-7 {
+	background-image: url(./../image/gallery/prof/7.jpg);
+}
+.prof__img-8 {
+	background-image: url(./../image/gallery/prof/8.jpg);
+}
+.prof__img-9 {
+	background-image: url(./../image/gallery/prof/9.jpg);
+}
+.prof__img-10 {
+	background-image: url(./../image/gallery/prof/10.jpg);
+}
+.prof__img-11 {
+	background-image: url(./../image/gallery/prof/11.jpg);
+}
+.prof__img-12 {
+	background-image: url(./../image/gallery/prof/12.jpg);
+}
+
+.gallery__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.show-more {
+	padding: 23px 90px;
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 0.6px;
+	color: $caparol;
+	border: 1px solid #c4c4c4;
+
+	&:hover {
+		color: $pantone;
+		border-color: $pantone;
+	}
+
+	@include mediaTable {
+		padding: 23px 60px;
+		font-size: 20px;
+	}
+}

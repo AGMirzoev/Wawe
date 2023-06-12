@@ -1,0 +1,52 @@
+.team {
+	padding: 200px 0;
+
+	@include mediaTable {
+		padding: 40px 0;
+	}
+}
+
+.team__heading {
+	margin-bottom: 215px;
+
+	@include mediaLaptopmini {
+		font-size: 36px;
+	}
+
+	@include mediaTable {
+		font-size: 22px;
+		margin-bottom: 40px;
+	}
+}
+
+.team__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 105px;
+
+	@include mediaTable {
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+		gap: 40px;
+	}
+}
+
+.team__img {
+	margin-bottom: 25px;
+}
+
+.team__title {
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 0.6px;
+	color: $caparol;
+	text-align: center;
+}
+
+.team__subtitle {
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 0.6px;
+	color: $caparol;
+	text-align: center;
+}

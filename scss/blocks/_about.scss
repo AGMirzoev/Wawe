@@ -1,0 +1,40 @@
+.about {
+  padding: 190px 0 135px;
+  background-color: $white;
+
+  @include mediaTable {
+    padding: 40px 0;
+  }
+}
+
+.about__heading {
+  margin-bottom: 100px;
+
+  @include mediaLaptopmini {
+    font-size: 36px;
+  }
+
+  @include mediaTable {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+
+  @include mediaTable {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+
+.about__text {
+  max-width: 580px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.6px;
+  color: $caparol;
+}

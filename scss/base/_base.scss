@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+body {
+	font-family: $font-main;
+	background-color: $white;
+	color: $caparol;
+	font-size: 14px;
+}
+
+a {
+	color: $white;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: $pantone;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1230px;
+}
+
+.heading {
+	position: relative;
+	font-family: $font-accent;
+	font-weight: 600;
+	font-size: 48px;
+	letter-spacing: 0.6px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $sapphire;
+
+	&::after {
+		content: '/';
+		position: absolute;
+		bottom: -20px;
+		font-weight: 600;
+		font-size: 72px;
+		letter-spacing: 0.6px;
+		color: #00b2a0;
+
+		@include mediaLaptopmini {
+			font-size: 48px;
+		}
+
+		@include mediaTable {
+			font-size: 36px;
+		}
+	}
+}
+
+.visually-hidden {
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	clip-path: inset(50%);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+.none {
+	display: none !important;
+}

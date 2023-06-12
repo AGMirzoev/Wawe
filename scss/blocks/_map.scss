@@ -1,0 +1,42 @@
+.map {
+	padding: 200px 0;
+
+	@include mediaTable {
+		padding: 40px 0;
+	}
+}
+
+.map__block {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 70px;
+		left: calc(45% - 0px);
+		transform: translate(50%, 0);
+		width: 60px;
+		height: 70px;
+		background-image: url(./../../image/map/Pin.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		@include mediaTable {
+			width: 20px;
+			height: 30px;
+			top: 7px;
+			left: calc(43% - 0px);
+		}
+
+		@include mediaTable {
+			top: 60px;
+			left: calc(47% - 0px);
+		}
+
+		@include mediamobile {
+			top: 8px;
+			left: calc(42% - 0px);
+		}
+	}
+}

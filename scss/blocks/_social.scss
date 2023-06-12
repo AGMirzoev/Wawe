@@ -1,0 +1,29 @@
+.social {
+	padding: 190px 0;
+
+	@include mediaTable {
+		padding: 40px 0;
+	}
+}
+
+.social__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	@include mediaTable {
+		flex-direction: column;
+	}
+}
+
+.social__link {
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 0.6px;
+	color: $caparol;
+
+	@include mediaTable {
+		font-size: 18px;
+	}
+}

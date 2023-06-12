@@ -1,0 +1,127 @@
+.header {
+  position: relative;
+  z-index: 0;
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-image: url(./../image/header/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 490px;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      #01353e 0%,
+      rgba(51, 51, 51, 0.595076) 31.64%,
+      rgba(51, 51, 51, 0.222586) 74.35%,
+      rgba(51, 51, 51, 0) 99.87%
+    );
+  }
+}
+
+.header__top {
+  margin-bottom: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top-mobile {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $pantone;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+  padding: 40px 0;
+
+  .header__nav {
+    display: block;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .header__nav-btn {
+    position: fixed;
+    top: 50px;
+    right: 15px;
+  }
+}
+
+.header__nav {
+  @include mediaTable {
+    display: none;
+  }
+}
+
+.nav {
+  font-size: 24px;
+  letter-spacing: 0.6px;
+}
+.nav__list {
+  display: flex;
+  column-gap: 45px;
+}
+
+.header__nav-btn {
+  display: none;
+
+  @include mediaTable {
+    display: block;
+  }
+}
+
+.header__logo {
+  margin-right: 185px;
+}
+
+.header__caption {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: $gunpowder;
+
+  @include mediaTable {
+    margin-bottom: 40px;
+    font-size: 86px;
+  }
+}
+
+.header__text {
+  margin-bottom: 315px;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: $black;
+
+  @include mediaTable {
+    margin-bottom: 440px;
+    font-size: 22px;
+  }
+}
+
+.header__benefits {
+  display: block;
+  text-align: center;
+}
