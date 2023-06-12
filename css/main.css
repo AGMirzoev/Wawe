@@ -1108,7 +1108,32 @@ a:hover {
 
 .swiper {
   max-width: 1920px;
-  height: auto;
+  height: 800px;
+}
+@media screen and (max-width: 1440px) {
+  .swiper {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper {
+    height: 560px;
+  }
+}
+@media screen and (max-width: 985px) {
+  .swiper {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .swiper {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .swiper {
+    height: 180px;
+  }
 }
 
 .swiper-slide {
